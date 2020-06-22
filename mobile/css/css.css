@@ -1,0 +1,436 @@
+*{  
+    margin: 0px;  
+    padding: 0px;  
+}  
+
+.img_all{
+    width: 100%;  
+    height: auto;  
+    max-width: 100%;  
+    max-height: 100%;     
+}
+
+body{
+    background-color: black;
+}
+
+audio{
+    display: none;
+}
+
+
+
+
+.nav{
+    padding-top: 16px;
+    padding-left:20px;
+}
+
+.nav ul li{
+    list-style:none; /* 将默认的列表符号去掉 */
+    padding-right: 10px; /* 将默认的内边距去掉 */
+    margin:0; /* 将默认的外边距去掉 */
+    float:left; /* 往左浮动 */
+}
+
+
+
+.nav ul li a
+{
+    color:rgb(145,145,145);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.nav ul li a:hover
+{
+    color: white;
+}
+
+.footer
+{
+    clear: both;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer div
+{
+    color: rgb(145,145,145);
+    font-size: 0.8rem;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#pannel_body
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 190;
+}
+
+.pannel
+{
+    position: absolute;
+
+    top:14%;
+    left:10%;
+    background-image: url('../imgs/UI_Paper_001.png');
+    background-size:100% 100%;
+    width: 81.4%;
+    height:66.99%;
+    z-index: 200;
+}
+
+
+.pannel_close
+{
+    float: right;
+    width: 5%;
+    height: auto;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+#pannel_text
+{
+    line-height: 1.1rem;
+    padding: 3rem 2rem;
+    text-indent:1rem;
+    color: rgb(65,65,65);
+    font-size: 0.8rem;
+
+}
+
+
+
+
+.back_gif{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.sound_btn
+{
+    float: right;
+    width: 9.21%;
+    height: auto;
+    margin-top: 5%;
+    margin-right:6%;
+
+}
+
+
+.sound_btn_off
+{
+    display: none;
+}
+
+
+.btn_play
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 15.3%;
+    padding-top: 60%;
+
+
+
+}
+
+
+.btn_download{
+    position: fixed;
+    margin: 0 auto;
+    text-align: center;
+    width: 59.21%;
+    bottom: 16%;
+    left: 20%;
+
+}
+
+
+.shadow{   
+       opacity: 0.7;      
+       background:black;      
+       height: 100%;
+       width: 100%;
+       text-align: right;
+     } 
+
+#play_video{
+    position: absolute;      
+    bottom:0;      
+    left: 0;      
+    right: 0;      
+    top: 0;  
+    z-index: 100;      
+    display: none;
+
+}
+.pop_video
+{
+    position: absolute;     
+    z-index: 101;      
+    width: 90%;
+    height: auto;
+    left: 5%;
+    top: 30%;
+  
+
+}
+
+
+#p_video{
+    width: 100%;
+    height: auto;
+}
+
+.video_close
+{
+    width: 9.22%;
+    height: auto;
+    padding-right: 5%;
+    padding-top: 30%;
+}
+
+
+
+
+
+
+
+
+
+@keyframes anim2
+{
+   from {
+    width:0px;
+   }
+   to{
+    width: 290px;
+
+   }
+}
+
+@-moz-keyframes anim2 /* Firefox */
+{
+    from {
+        width:0px;
+       }
+       to{
+        width: 290px;
+    
+       }
+}
+
+@-webkit-keyframes anim2 /* Safari 和 Chrome */
+{
+    from {
+        width:0px;
+       }
+       to{
+        width: 290px;
+    
+       }
+}
+
+@-o-keyframes anim2 /* Opera */
+{
+    from {
+        width:0px;
+       }
+       to{
+        width: 290px;
+       }
+}
+
+
+@keyframes anim3
+{
+0%   {left:-140px; top:540px;}
+100% {left:150px; top:540px;}
+}
+
+@-moz-keyframes anim3 /* Firefox */
+{
+    0%   {left:-140px; top:540px;}
+    100% {left:150px; top:540px;}
+}
+
+@-webkit-keyframes anim3 /* Safari 和 Chrome */
+{
+    0%   {left:-140px; top:540px;}
+    100% {left:150px; top:540px;}
+}
+
+@-o-keyframes anim3 /* Opera */
+{
+    0%   {left:-140px; top:540px;}
+    100% {left:150px; top:540px;}
+}
+
+
+
+@keyframes anim2_1
+{
+   from {
+    width:0px;
+   }
+   to{
+    width: 145px;
+
+   }
+}
+
+@-moz-keyframes anim2_1 /* Firefox */
+{
+    from {
+        width:0px;
+       }
+       to{
+        width: 145px;
+    
+       }
+}
+
+@-webkit-keyframes anim2_1 /* Safari 和 Chrome */
+{
+    from {
+        width:0px;
+       }
+       to{
+        width: 145px;
+    
+       }
+}
+
+@-o-keyframes anim2_1 /* Opera */
+{
+    from {
+        width:0px;
+       }
+       to{
+        width: 145px;
+       }
+}
+
+
+
+@keyframes anim3_1
+{
+    0%   {left:-70px; top:266px;}
+    100% {left:70px; top:266px;}
+}
+
+@-moz-keyframes anim3_1 /* Firefox */
+{
+    0%   {left:-70px; top:266px;}
+    100% {left:70px; top:266px;}
+}
+
+@-webkit-keyframes anim3_1 /* Safari 和 Chrome */
+{
+    0%   {left:-70px; top:266px;}
+    100% {left:70px; top:266px;}
+}
+
+@-o-keyframes anim3_1 /* Opera */
+{
+    0%   {left:-70px; top:266px;}
+    100% {left:70px; top:266px;}
+}
+
+@media screen and (min-width:100px) and (max-width:640px){
+    #loading{
+        margin: 0 auto;
+        text-align: center;
+        width: 320px;
+        height: 568px;
+        background-image: url("../imgs/Loading_001.jpg");
+        background-size:cover;
+
+    }
+    #loading_2
+    {
+        position: relative;
+        width: 0px;
+        height: 9px;
+        left:90px;
+        top: 280px;
+        background-image: url("../imgs/Loading_002.png"); 
+        background-size:cover;
+
+        animation-name: anim2_1;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-fill-mode:forwards;
+        animation-timing-function: linear;
+    } 
+
+    #loading_3
+    {
+         position: relative;
+         width: 10.5px;
+         height: 12px;
+        left:-70px;
+        top: 266px; 
+        animation-name: anim3_1;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-fill-mode:forwards;
+        animation-timing-function: linear;
+    }
+}
+
+@media screen and (min-device-width:640px) and (max-device-width:1920px){
+    #loading{
+        margin: 0 auto;
+        text-align: center;
+        width: 640px;
+        height:1136px;
+        background-image: url("../imgs/Loading_001.jpg");
+        background-size:cover;
+    }
+    #loading_2
+    {
+        position: relative;
+        width: 290px;
+        height: 19px;
+        left:180px;
+        top: 558px;
+        background-image: url("../imgs/Loading_002.png"); 
+        background-size:cover;
+        animation-name: anim2;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-fill-mode:forwards;
+        animation-timing-function: linear;
+    }
+
+    #loading_3
+    {
+         position: relative;
+         width: 21px;
+         height: 24px;
+        left:-140px;
+        top: 541px; 
+        animation-name: anim3;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-fill-mode:forwards;
+        animation-timing-function: linear;
+    }
+
+}

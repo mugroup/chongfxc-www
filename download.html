@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html> <!--<![endif]-->
+    <head>
+        <title>尸溯|下载</title>
+        <script type="text/javascript" src="./js/download.js"></script>
+    </head>
+
+    <body></body>
+    <script type='text/javascript'> 
+
+　window.onload = function(){ 
+        var ua = navigator.userAgent;
+        var ipad = ua.match(/(iPad).*OS\s([\d_]+)/);
+        isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/);
+        isAndroid = ua.match(/(Android)\s+([\d.]+)/);
+        if(isIphone){
+            download_ios();
+        }
+        else
+        {
+            download_android();
+        }
+    }
+        </script>
+</html>

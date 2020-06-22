@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>尸溯</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="./mobile/css/css.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="./mobile/js/js.js"></script>
+  <script type="text/javascript" src="./js/download.js"></script>
+
+</head>
+
+
+
+<body>
+  <audio id="audio_id" autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="./audio/sound.mp3">
+    你的浏览器版本太低，不支持audio标签
+  </audio>
+
+
+  <div id="loading">
+    <div id="loading_2">
+    </div>
+    <div>
+      <img id="loading_3" class="img_all" src="./mobile/imgs/Loading_003.png">
+    </div>
+  </div>
+
+  <div id="body_id"   style="display: none;">
+    <div class="back_gif">
+      <img class="img_all" src="./mobile/imgs/shuban.gif" id="back_img_id">
+    </div>
+
+
+    <div class="sound_btn">
+      <img class="img_all" id="sound_btn_on_id" src="./mobile/imgs/Button_PhoneMusic_001.png"
+        onmouseover="set_img_src(this,'./mobile/imgs/Button_PhoneMusic_002.png')"
+        onmouseout="set_img_src(this,'./mobile/imgs/Button_PhoneMusic_001.png')" onClick="switch_audio(this,true)">
+      <img  id="sound_btn_off_id" class="img_all sound_btn_off" src="./mobile/imgs/Button_PhoneMusicOff_001.png"
+        onmouseover="set_img_src(this,'./mobile/imgs/Button_PhoneMusicOff_002.png')"
+        onmouseout="set_img_src(this,'./mobile/imgs/Button_PhoneMusicOff_001.png')" onClick="switch_audio(this,false)">
+    </div>
+
+    <div class="nav">
+        <ul>
+          <li><a href="javascript:;" onClick="showPannel('pannel_text1')">公司简介&nbsp;|</a></li>
+          <li><a href="javascript:;" onClick="showPannel('pannel_text2')">产品介绍&nbsp;|</a></li>
+          <li><a href="javascript:;" onClick="showPannel('pannel_text3')">联系我们&nbsp;|</a></li>
+          <li><a href="./agree.html" target="_blank">隐私政策</a></li>
+        </ul>
+      </div>
+
+    <div class="btn_play">
+        <a href="javascript:;" onClick="showVideo(true)"><img class="img_all" src="./mobile/imgs/Button_Video_001.png"
+          onmouseover="set_img_src(this,'./mobile/imgs/Button_Video_002.png')"
+          onmouseout="set_img_src(this,'./mobile/imgs/Button_Video_001.png')"></a>
+    </div>
+
+
+    <div class="btn_download">
+        <a href="./download.html" target="_blank"><img class="img_all" src="./mobile/imgs/Button_Download_001.png" 
+                     onmouseover="set_img_src(this,'./mobile/imgs/Button_Download_002.png')" 
+         onmouseout="set_img_src(this,'./mobile/imgs/Button_Download_001.png')" ></a>
+     </div>
+
+     <div class="footer">
+        <div>
+            抵制不良游戏&nbsp;&nbsp;拒绝盗版游戏&nbsp;&nbsp;注意自我保护&nbsp;&nbsp;谨防受骗上当&nbsp;&nbsp;<br>适度游戏益脑&nbsp;&nbsp;沉迷游戏伤身&nbsp;&nbsp;合理安排时间&nbsp;&nbsp;享受健康生活
+            <br>网络备案信息：京ICP备19054804号-2<br>北京木瓜互娱科技有限公司
+        </div>
+      </div>
+
+      <div id="pannel_body" style="display: none;">
+
+          <div class="shadow">
+    
+          </div>
+          <div class="pannel">
+              <div class="pannel_close">
+                  <img class="img_all" src="./imgs/Button_Off_003.png" onclick="closePannel()">
+                </div>
+                <div id="pannel_text">
+                   <span id="pannel_text1">
+                      <h2 style="text-align: center;font-size: 1rem;padding-bottom: 1rem;">公司简介</h2>
+                      <p>北京木瓜互娱科技有限公司是国内拥有自主研发、运营能力的资深研发团队，由众多游戏老兵组成，拥有在国内开发互联网应用、服务的领先优势。通过高素质的精英团队、先进的网络技术及专业经营网络娱乐的经验，本着打造最符合国内玩家口味的产品，做“最体贴玩家游戏”的理念，推出的游戏产品一直都深受众多玩家喜爱，旗下成功运营有多款游戏。</p>
+                      <p>在不断研发游戏产品的同时，木瓜也希望与业界同行深度合作。旗下的众多优质游戏需要更多的渠道资源来拓展用户，也期望能提升木瓜在游戏市场上的份额，并给予合作方持续、稳定、高额的成果回报。</p>
+                      <p>木瓜互娱将期待与您一起携手同行，共同开拓广阔的网络游戏市场!</p>
+                    </span>
+                   <span id="pannel_text2">
+                      <h2 style="text-align: center;font-size: 1rem;padding-bottom: 1rem;"> 《尸溯》产品介绍</h2>
+                      <p>你是一位入殓师，在偶然接触到一具女尸之后，伴着不时发生的灵异现象，他忽然发现自己可以听到很多莫名其妙的声音。但诡异的是，他意识到这些声音有些发生在十余年前，有些又会在不远的将来变为现实......</p>
+                      <p>行踪诡异的人影，忽近忽远的脚步，似真似幻的可怕光景，你不仅需要在扑朔迷离的声音之中捕捉蛛丝马迹，还需要在数位主人公所经历的故事中发掘值得调查的线索，以此揭开有关灵魂、人性、邪恶、爱恨情仇的真相...</p>
+                   </span>
+                   <span id="pannel_text3">
+                      <h2 style="text-align: center;padding-bottom: 50%;font-size: 1rem;">联系我们</h2>
+                      <p>尸溯官方QQ交流群：894437191</p>
+                      <p>公司座机：010-53386952</p>
+                      <p>公司地址：北京市海淀区中关村华侨创新产业园10号</p>
+                   </span>
+                </div>
+          </div>
+    
+         
+         
+        </div>
+    
+
+    <div id="play_video">
+      <div class="pop_video">
+        <video id="p_video" loop src="./video/movie.mp4" type="video/mp4" controls="controls"></video>
+      </div>
+      <div class="shadow">
+        <a href="javascript:;" onClick="showVideo(false)"> <img class="img_all video_close" src="./mobile/imgs/Button_PhoneOff_001.png"
+            onmouseover="set_img_src(this,'./mobile/imgs/Button_PhoneOff_002.png')"
+            onmouseout="set_img_src(this,'./mobile/imgs/Button_PhoneOff_001.png')"> </a>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+<script type='text/javascript'>
+
+
+  function loadImage(obj, url, callback) {
+    var img = new Image();
+    img.src = url;
+
+    // 判断图片是否在缓存中
+    if (img.complete) {
+      callback.call(img, obj);
+      return;
+    }
+
+    // 图片加载到浏览器的缓存中回调函数
+    img.onload = function () {
+      callback.call(img, obj);
+    }
+  }
+
+  function showImage(obj) {
+    obj.src = this.src;
+    var loading = document.getElementById("loading");
+    loading.style.display = "none";
+    var body = document.getElementById("body_id");
+    body.style.display = "inline";
+
+
+    var audio = document.getElementById("audio_id");
+    if (audio.currentTime > 0) {
+    }
+    else {
+      var e = document.getElementById("sound_btn_on_id");
+      switch_audio(e, true);
+    }
+
+
+  }
+
+  window.onload = function () {
+    var ig = document.getElementById("back_img_id");
+    loadImage(ig, "./mobile/imgs/shuban.gif", showImage);
+  }
+
+
+
+
+
+</script>
+
+</html>
